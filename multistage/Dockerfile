@@ -5,8 +5,8 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN python -m venv /opt/venv && \\
-    . /opt/venv/bin/activate && \\
+RUN python -m venv /opt/venv && \
+    . /opt/venv/bin/activate && \
     pip install --no-cache-dir -r requirements.txt
 
 # Stage 2: Production Stage
