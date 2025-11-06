@@ -2,7 +2,7 @@
 FROM node:lts
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copy dependency definitions
 COPY package*.json ./
